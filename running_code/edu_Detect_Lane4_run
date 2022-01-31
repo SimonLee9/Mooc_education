@@ -1,0 +1,3 @@
+#!/bin/bash
+
+roslaunch turtlebot3_autorace_control turtlebot3_autorace_control_lane.launch

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+export AUTO_EX_CALIB=action
+roslaunch turtlebot3_autorace_camera turtlebot3_autorace_extrinsic_camera_calibration.launch
