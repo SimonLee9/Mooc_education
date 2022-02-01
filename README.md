@@ -1,7 +1,7 @@
 # Mooc_education
 reference : https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/
 
-# PC Setup
+# 1. PC Setup
 
 ## Install ROS on Remote PC
 $ sudo apt-get update <br />
