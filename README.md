@@ -20,7 +20,16 @@ $ sudo apt-get install ros-kinetic-joy ros-kinetic-teleop-twist-joy \
   ros-kinetic-compressed-image-transport ros-kinetic-rqt* \
   ros-kinetic-gmapping ros-kinetic-navigation ros-kinetic-interactive-markers
   
-  ## Install TurtleBot3 Packages
+ ## Install TurtleBot3 Packages
 $ sudo apt-get install ros-kinetic-dynamixel-sdk <br />
 $ sudo apt-get install ros-kinetic-turtlebot3-msgs <br />
 $ sudo apt-get install ros-kinetic-turtlebot3 <br />
+
+## Set TurtleBot3 Model Name
+$ echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc <br />
+$ echo "export TURTLEBOT3_MODEL=waffle_pi" >> ~/.bashrc <br />
+
+## Network Configuration
+$ ifconfig <br />
+$ nano ~/.bashrc <br />
+$ source ~/.bashrc <br />
