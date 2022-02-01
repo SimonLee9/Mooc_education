@@ -1,3 +1,0 @@
-#!/bin/bash
-
-roslaunch turtlebot3_gazebo turtlebot3_autorace_edu.launch
