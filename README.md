@@ -2,7 +2,7 @@
 reference : https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/
 
 # 1. PC Setup
-
+(reference : https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/#pc-setup)
 ## Install ROS on Remote PC
 $ sudo apt-get update <br />
 $ sudo apt-get upgrade <br />
@@ -33,4 +33,24 @@ $ echo "export TURTLEBOT3_MODEL=waffle_pi" >> ~/.bashrc <br />
 ## Network Configuration
 $ ifconfig <br />
 $ nano ~/.bashrc <br />
+$ source ~/.bashrc <br />
+
+# 2. SBC Setup 
+(reference : https://emanual.robotis.com/docs/en/platform/turtlebot3/sbc_setup/#sbc-setup)
+
+## Configure the Raspberry Pi
+$ ifconfig <br />
+
+$ ssh pi@{IP_ADDRESS_OF_RASPBERRY_PI} <br />
+
+$ sudo apt-get install ntpdate <br />
+$ sudo ntpdate ntp.ubuntu.com <br />
+
+$ sudo raspi-config <br />
+
+$ nano ~/.bashrc <br />
+
+export ROS_MASTER_URI=http://{IP_ADDRESS_OF_REMOTE_PC}:11311 <br />
+export ROS_HOSTNAME={IP_ADDRESS_OF_RASPBERRY_PI_3} <br />
+
 $ source ~/.bashrc <br />
