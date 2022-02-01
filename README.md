@@ -54,3 +54,21 @@ export ROS_MASTER_URI=http://{IP_ADDRESS_OF_REMOTE_PC}:11311 <br />
 export ROS_HOSTNAME={IP_ADDRESS_OF_RASPBERRY_PI_3} <br />
 
 $ source ~/.bashrc <br />
+
+# 3. OpenCR Setup
+(reference : https://emanual.robotis.com/docs/en/platform/turtlebot3/opencr_setup/#opencr-setup)
+
+## OpenCR Setup
+$ sudo dpkg --add-architecture armhf <br />
+$ sudo apt-get update <br />
+$ sudo apt-get install libc6:armhf <br />
+
+$ export OPENCR_PORT=/dev/ttyACM0 <br />
+$ export OPENCR_MODEL=burger <br />
+$ rm -rf ./opencr_update.tar.bz2 <br />
+
+$ wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS1/latest/opencr_update.tar.bz2 <br />
+$ tar -xvf opencr_update.tar.bz2 <br />
+
+$ cd ./opencr_update <br />
+$ ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr <br />
